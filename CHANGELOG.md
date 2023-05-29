@@ -1,5 +1,11 @@
 # @caiotracera/eslint-config
 
+## 2.0.1
+
+### Patch Changes
+
+- 2bc9db7: fix(deps): update typescript-eslint monorepo to v5.59.8
+
 ## 2.0.0
 
 ### Major Changes
