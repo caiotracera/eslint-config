@@ -1,5 +1,11 @@
 # @caiotracera/eslint-config
 
+## 2.0.0
+
+### Major Changes
+
+- 9da4cdb: add node configuration
+
 ## 1.0.2
 
 ### Patch Changes
