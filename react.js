@@ -8,42 +8,51 @@ module.exports = {
     node: true,
     jest: true,
   },
-  plugins: ['react', 'jsx-a11y', '@typescript-eslint', 'prettier'],
+  plugins: ["import", "react", "jsx-a11y", "@typescript-eslint", "prettier"],
   extends: [
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended',
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
   ],
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
   rules: {
+    "import/extensions": "off",
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        devDependencies: true,
+      },
+    ],
+    "import/no-unresolved": "off",
     "import/no-unused-modules": [
       "error",
       {
-        "ignoreExports": [
-          "**/?(*.)+(spec|test|d|stories).[jt]s?(x)"
-        ],
-        "unusedExports": true
-      }
+        ignoreExports: ["**/?(*.)+(spec|test|d|stories).[jt]s?(x)"],
+        unusedExports: true,
+      },
     ],
     "import/order": [
       "error",
       {
-        "alphabetize": {
-          "caseInsensitive": true,
-          "order": "asc"
+        alphabetize: {
+          caseInsensitive: true,
+          order: "asc",
         },
-        "distinctGroup": true,
-        "groups": [
+        distinctGroup: true,
+        groups: [
           "builtin",
           "external",
           "internal",
@@ -51,32 +60,26 @@ module.exports = {
           "sibling",
           "index",
           "object",
-          "type"
+          "type",
         ],
         "newlines-between": "always",
-        "pathGroups": [
+        pathGroups: [
           {
-            "group": "builtin",
-            "pattern": "react",
-            "position": "before"
-          }
+            group: "builtin",
+            pattern: "react",
+            position: "before",
+          },
         ],
-        "pathGroupsExcludedImportTypes": [
-          "react"
-        ]
-      }
+        pathGroupsExcludedImportTypes: ["react"],
+      },
     ],
     "import/prefer-default-export": "off",
     "jsx-a11y/alt-text": [
       "warn",
       {
-        "elements": [
-          "img"
-        ],
-        "img": [
-          "Image"
-        ]
-      }
+        elements: ["img"],
+        img: ["Image"],
+      },
     ],
     "jsx-a11y/aria-props": "warn",
     "jsx-a11y/aria-proptypes": "warn",
@@ -86,23 +89,29 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto",
-        "printWidth": 80,
-        "semi": true,
-        "singleQuote": true,
-        "tabWidth": 2,
-        "trailingComma": "all"
-      }
+        endOfLine: "auto",
+        printWidth: 80,
+        semi: true,
+        singleQuote: true,
+        tabWidth: 2,
+        trailingComma: "all",
+      },
     ],
     "react/prop-types": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
   },
   settings: {
-    react: {
-      version: 'detect',
+    "import/resolver": {
+      typescript: {
+        alwaysTryTypes: true,
+        directory: "./tsconfig.json",
+      },
     },
-    'import/parsers': {
-      [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
+    react: {
+      version: "detect",
+    },
+    "import/parsers": {
+      [require.resolve("@typescript-eslint/parser")]: [".ts", ".tsx", ".d.ts"],
     },
   },
 };
