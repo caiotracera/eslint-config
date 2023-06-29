@@ -1,5 +1,11 @@
 # @caiotracera/eslint-config
 
+## 3.0.1
+
+### Patch Changes
+
+- 6974aaa: v3.0.1
+
 ## 3.0.0
 
 ### Major Changes
