@@ -23,32 +23,79 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'prettier/prettier': [
-      'error',
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "import/no-unused-modules": [
+      "error",
       {
-        trailingComma: 'all',
-        singleQuote: true,
-        printWidth: 80,
-        tabWidth: 2,
-        semi: true,
-        endOfLine: 'auto',
-      },
+        "ignoreExports": [
+          "**/?(*.)+(spec|test|d|stories).[jt]s?(x)"
+        ],
+        "unusedExports": true
+      }
     ],
-    'import/prefer-default-export': 'off',
-    'react/react-in-jsx-scope': 'off',
-    'react/prop-types': 'off',
-    'jsx-a11y/alt-text': [
-      'warn',
+    "import/order": [
+      "error",
       {
-        elements: ['img'],
-        img: ['Image'],
-      },
+        "alphabetize": {
+          "caseInsensitive": true,
+          "order": "asc"
+        },
+        "distinctGroup": true,
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ],
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "group": "builtin",
+            "pattern": "react",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "react"
+        ]
+      }
     ],
-    'jsx-a11y/aria-props': 'warn',
-    'jsx-a11y/aria-proptypes': 'warn',
-    'jsx-a11y/aria-unsupported-elements': 'warn',
-    'jsx-a11y/role-has-required-aria-props': 'warn',
-    'jsx-a11y/role-supports-aria-props': 'warn',
+    "import/prefer-default-export": "off",
+    "jsx-a11y/alt-text": [
+      "warn",
+      {
+        "elements": [
+          "img"
+        ],
+        "img": [
+          "Image"
+        ]
+      }
+    ],
+    "jsx-a11y/aria-props": "warn",
+    "jsx-a11y/aria-proptypes": "warn",
+    "jsx-a11y/aria-unsupported-elements": "warn",
+    "jsx-a11y/role-has-required-aria-props": "warn",
+    "jsx-a11y/role-supports-aria-props": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "printWidth": 80,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "all"
+      }
+    ],
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off"
   },
   settings: {
     react: {
