@@ -29,7 +29,6 @@ module.exports = {
     "import/extensions": "off",
     "import/first": "error",
     "import/newline-after-import": "error",
-    "import/no-duplicates": "error",
     "import/no-extraneous-dependencies": [
       "error",
       {
