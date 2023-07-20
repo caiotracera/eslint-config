@@ -29,6 +29,7 @@ module.exports = {
     "import/extensions": "off",
     "import/first": "error",
     "import/newline-after-import": "error",
+    "import/no-duplicates": "off",
     "import/no-extraneous-dependencies": [
       "error",
       {
@@ -36,13 +37,7 @@ module.exports = {
       },
     ],
     "import/no-unresolved": "off",
-    "import/no-unused-modules": [
-      "error",
-      {
-        ignoreExports: ["**/?(*.)+(spec|test|d|stories).[jt]s?(x)"],
-        unusedExports: true,
-      },
-    ],
+    "import/no-unused-modules": "off",
     "import/order": [
       "error",
       {
