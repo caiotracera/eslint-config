@@ -1,5 +1,19 @@
 # @caiotracera/eslint-config
 
+## 3.1.0
+
+### Minor Changes
+
+- 5fb8e69: remove rules `import/no-duplicates` and `import/no-unused-modules`
+
+### Patch Changes
+
+- fce8f48: fix(deps): update typescript-eslint monorepo to v6 (major)
+- b7b9457: chore(deps): update dependency @types/eslint to v8.44.0
+- 3fdb143: chore(deps): update dependency @changesets/cli to v2.26.2
+- 0707fdd: fix(deps): update typescript-eslint monorepo to v5.62.0
+- 48b2cb2: fix(deps): update dependency eslint-plugin-react to v7.33.0
+
 ## 3.0.2
 
 ### Patch Changes
