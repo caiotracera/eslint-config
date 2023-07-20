@@ -1,5 +1,11 @@
 # @caiotracera/eslint-config
 
+## 3.1.2
+
+### Patch Changes
+
+- dd56cba: :bug: fix prettier/prettier error
+
 ## 3.1.1
 
 ### Patch Changes
