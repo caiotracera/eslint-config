@@ -1,5 +1,11 @@
 # @caiotracera/eslint-config
 
+## 3.1.1
+
+### Patch Changes
+
+- 4b2ad0a: fix(deps): update dependency prettier to v3
+
 ## 3.1.0
 
 ### Minor Changes
