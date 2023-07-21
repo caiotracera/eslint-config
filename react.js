@@ -11,7 +11,6 @@ module.exports = {
   plugins: ["import", "react", "jsx-a11y", "@typescript-eslint", "prettier"],
   extends: [
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
     "plugin:prettier/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
