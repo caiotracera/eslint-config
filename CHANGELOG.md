@@ -1,5 +1,11 @@
 # @caiotracera/eslint-config
 
+## 3.3.0
+
+### Minor Changes
+
+- 51ac746: feat(packages): add Next 13+ config
+
 ## 3.2.1
 
 ### Patch Changes
