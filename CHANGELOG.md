@@ -1,5 +1,17 @@
 # @caiotracera/eslint-config
 
+## 3.2.1
+
+### Patch Changes
+
+- 0356e9c: Update dependency @types/eslint to v8.44.2
+- 1d62b84: Update dependency prettier to v3.0.2
+- 1ec4560: Update dependency eslint-config-prettier to v9
+- f537a3b: fix(deps): update dependency eslint-plugin-import to v2.28.1
+- 8945c4d: Update dependency eslint-import-resolver-typescript to v3.6.0
+- 5336e65: Update typescript-eslint monorepo to v6.4.1
+- 514a29a: Update dependency eslint-plugin-react to v7.33.2
+
 ## 3.2.0
 
 ### Minor Changes
