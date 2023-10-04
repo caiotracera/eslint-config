@@ -1,5 +1,16 @@
 # @caiotracera/eslint-config
 
+## 3.3.1
+
+### Patch Changes
+
+- e31741f: chore(deps): update actions/checkout action to v4
+- 0bfe94e: chore: add eslint-config-standard
+- 67cdd4f: chore(deps): update actions/checkout digest to 8ade135
+- f180c27: fix(deps): update dependency eslint-import-resolver-typescript to v3.6.1
+- d2241ff: fix(deps): update dependency prettier to v3.0.3
+- 2ab43e1: chore(deps): update dependency @types/eslint to v8.44.3
+
 ## 3.3.0
 
 ### Minor Changes
